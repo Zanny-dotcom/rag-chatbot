@@ -16,11 +16,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://oskariozan.com",
+        "https://www.oskariozan.com",
+        "https://instrumental-resolution-recognize-binary.trycloudflare.com",
         "http://localhost:3000",
         "http://localhost:5173",
         "http://localhost:8080",
     ],
-    allow_methods=["POST"],
+    allow_methods=["POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
